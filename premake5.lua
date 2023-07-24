@@ -8,13 +8,18 @@ project "spdlog"
 
 	files
 	{
-    "src/**.cpp"
+ 		"src/**.cpp"
 	}
 
-  includedirs
-  {
-    "include"
-  }
+	includedirs
+	{
+		"include"
+	}
+
+	defines
+	{
+		"SPDLOG_COMPILED_LIB"
+	}
 
 	filter "system:linux"
 		pic "On"
